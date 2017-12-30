@@ -90,7 +90,7 @@ public class gui {
 			
 		
 		
-		//Ovo nam ne treba jer imamo scroll
+		//Ovo nam ne treba jer imamo scroll!
 		//textResult.setBounds(36, 170, 421, 137);
 		//textResult.setLineWrap(true);
 		
