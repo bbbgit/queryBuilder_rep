@@ -295,5 +295,26 @@ public class gui {
 		
 		
 		
+		JButton btnTestQuery = new JButton("Test Query");
+		btnTestQuery.setBounds(36, 400, 114, 23);
+		frmUserNameCreator.getContentPane().add(btnTestQuery);
+		
+		btnTestQuery.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				System.out.println( "DugmeTestQuery!" );
+				
+				//Dugme kopira query za test postojecih uslova
+				
+				String clipboardString = "select * from bank.bkcond where ope in ('024','025') and nat in ('COMVER','MACVER','MAVDEP','MICVER','MIVDEP') and cli='"+txtRoot.getText()+"';";
+				StringSelection stringSelection = new StringSelection(clipboardString);
+				Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+				clpbrd.setContents(stringSelection, null);
+
+			}
+		});
+		
+		
+		
 	}
 }
