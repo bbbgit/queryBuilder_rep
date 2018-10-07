@@ -35,7 +35,8 @@ public class gui {
 	public static JCheckBox chckbxSaveTxt  = new JCheckBox("Save txt");
 	public static JTextArea textResult = new JTextArea();
 	
-	
+	//Git proba
+	int test = 0;
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
